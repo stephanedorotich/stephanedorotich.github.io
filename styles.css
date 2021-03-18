@@ -1,0 +1,27 @@
+* {
+    font-family: "Kumbh Sans", sans-serif;
+    margin: 0;
+}
+
+section {
+    background-color: cornflowerblue;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: crimson;
+    width: 1100px;
+    max-width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.alt  {
+    height: 200px;
+}
