@@ -1,12 +1,30 @@
-var btn = document.getElementsByTagName("button");
+// Source: https://www.w3schools.com/howto/howto_js_collapsible.asp
 
-for (var i = 0; i < btn.length; i++) {
-    btn[i].addEventListener("click", function () {
-        if (this.classList.contains("alt")) {
-            this.innerText = "Click to grow!";
+// declaring a variable to reference collapsible elements
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+// add event listener to every collapsible element
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        // Add "active" to its classlist
+        this.classList.toggle("active");
+        // Find the content related to this collapsible
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null; // hide content
         } else {
-            this.innerText = "Click to shrink!";
+            content.style.maxHeight = content.scrollHeight + "px"; // reveal content
         }
-        this.classList.toggle("alt");
-    })
+
+        for (var j = 0; j < coll.length; j++) {
+            if (coll[j] == this) continue;
+            else {
+                coll[j].classList.remove("active");
+                var content = coll[j].nextElementSibling;
+                content.style.maxHeight = null;
+            }
+        }
+    });
 }
+
