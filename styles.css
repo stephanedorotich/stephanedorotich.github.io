@@ -1,161 +1,37 @@
-* {
-    box-sizing: border-box;
-    font-family: "Kumbh Sans", sans-serif;
+
+html {
     scroll-behavior: smooth;
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-.responsive__image {
-    max-width: 100%;
-    height: auto;
-}
-
-.navbar {
-    background-color: #131313;
     width: 100%;
-    height: 65px;
-    position: fixed;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+/* Anchor */
+/*  Provides vertical adjustment to sections to accomodate the navbar */
+.anchor {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+/* Parallax */
+/*  Parallax support for a parallax image effect */
+.parallax {
+    min-height: 80vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* col-md-* */
+/*  Provides responsive height and alignment to columns */
+[class^="col-md"] {
+    min-height: calc(100vh - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    width: 1300px;
-    max-width: 85vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-
-#navbar__logo {
-    background-image: linear-gradient(to right, #40E0D0 0%, #FF8C00 50%, #FF0080 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display:flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    min-width: fit-content;
-}
-
-.navbar__menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-}
-
-.navbar__item {
-    display: flex;
-    align-items: center;
-    height: 80px;
-}
-
-.navbar__link {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    transition: color ease-out 0.3s;
-}
-
-.navbar__link:hover {
-    color: #FF0080;
-    transition: color ease-in 0.3s;
-}
-
-.section {
-    background-color: #eee;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    min-height: fit-content;
-}
-
-.alternating {
-    background-color: #bbeeee;
-}
-
-.section__image {
-    width: 45%;
-    padding: 0;
-}
-
-.section__text {
-    width: 55%;
-    padding: 0 2vw;
-}
-
-p {
-    margin: 10px;
-    text-align:justify;
-    font-size: 1rem;
-}
-
-a {
-    font-size: inherit;
-}
-
-.collapsible {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #777;
-    color: #fff;
-    cursor: pointer;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: background-color ease-out 0.3s;
-}
-
-.active, .collapsible:hover {
-    background-color: #FF8C00;
-    transition: background-color ease-in 0.3s;
-}
-
-.arrow-down {
-    transition: all ease 0.3s;
-}
-
-.collapsible.active .arrow-down {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-
-.faq {
-    flex-direction: column;
-    justify-content: center;
-}
-
-.faq__item {
-    width: 100%;
-    margin: 5px;
-}
-
-.content {
-    padding: 0 18px;
-    background-color: #fff;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height ease-in 0.3s;
-}
-
-.arrow-down {
-    width: 0; 
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #fff;
 }

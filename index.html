@@ -1,110 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--base HTML that every other webpage extends-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="navbar">
-        <div class="container">
-            <a href="#home" id="navbar__logo">
-                Rocky Tutor
-            </a>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#home" class="navbar__link">HOME</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#bio" class="navbar__link">BIO</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#faq" class="navbar__link">FAQ</a>
-                </li>
+    <title>Rocky Tutor</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light text-center bg-light">
+          <a class="navbar-brand" href="#">Rocky Tutor</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bio">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
             </ul>
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item">
+                  <a role="button" class="btn btn-primary" href="#register">
+                      Register
+                  </a>
+              </li>
+          </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+        
+        <!-- HOME SECTION -->
+        <div class="row">
+            <div class="col-md-1 d-none d-md-flex"></div>
+            <div class="col-md-5 d-none d-md-flex">
+                <div class="container">
+                    <img src="images/youveGotThis.jpg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="container">
+                    <h2 class="p-2">Remote Tutoring Services</h2>
+                    <p class="p-2 text-justify">
+                        Our mission is to help students succeed by building on what they already know.
+                        Students are encouraged to communicate their knowledge. This supports learning by allowing them to try to solve
+                        problems and questions first, instead of relying on outside help. Their learning is then supported by teaching
+                        and instruction to help them build accurate and effective conceptual models for their topics.
+                    </p>
+                </div>  
+            </div>
+            <div class="col-md-1 d-none d-md-flex"></div>
         </div>
-    </div>
 
-    <div class="section" id="home">
-        <div class="container">
-            <div class="section__image">
-                <img src="../images/youveGotThis.jpg" alt="" class="responsive__image">
-            </div>
-            <div class="section__text">
-                <h1>Support, Teach, Reinforce</h1>
-                <p>Our mission is to help students succeed by building on what they already know.
-                    Students are encouraged to communicate their knowledge. This supports learning by allowing them
-                    to try to solve problems and questions first, instead of relying on outside help. Their learning
-                    is then supported by teaching and instruction to help them build accurate and effective
-                    conceptual models for their topics.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section alternating" id="bio">
-        <div class="container">
-            <div class="section__text">
-                <h1>Hi, I'm Stéphane!</h1>
-                <p>
-                    I live in Cochrane, Alberta and have lived here most of my life.
-                </p>
-                <p>
-                    I study Computer Science at the University of Calgary and am interested in developing softwares that support informed decision making. I am passionate about fostering understanding, critical thinking, and empathy in myself and in others.
-                </p>
-                <p>
-                    I began tutoring in 2013 and have strengthened by ability to communicate concepts, explain theories, and suggest problem solving strategies to students.
-                </p>
-                <p>
-                    Much of my time is spent studying and working on projects. In my free time, I enjoy a variety of outdoor activities like backpacking, hiking, and climbing. If I'm hanging out at home I'm probably playing guitar, cooking, or playing League of Legends.
-                </p>
-            </div>
-            <div class="section__image">
-                <img src="../images/bio_profile.jpg" alt="Bow River, 2020" class="responsive__image">
-            </div>
-        </div>
-    </div>
-
-    <div class="section" id="faq">
-        <div class="container faq">
-            <div class="faq__item">
-                <button type="button" class="collapsible">
-                    What is your rate?
-                    <div class="arrow-down"></div>
-                </button>
-                <div class="content">
-                    <p>
-                        I charge $40 per 1 hour session.
+        <div style="background-image: url('images/bio_landscape2.jpg')" class="parallax"></div>
+               
+        <!-- BIO SECTION -->
+        <div class="anchor" id="bio"></div>
+        <div class="row">
+            <div class="col-md-1 d-none d-md-flex"></div>
+            <div class="col-md-6">
+                <div class="container">
+                    <p class="text-justify">
+                        <b style="font-size: 1.3rem;">Stéphane</b> lives in
+                        <a href="https://goo.gl/maps/icWVLXvJias8FyRn6" target="_blank" class="link-primary">Cochrane, AB</a>
+                        in the foothills of the Rocky Mountains.
+                        He studies Computer Science at the University
+                        of Calgary with a specialty in Software Engineering.
+                    </p>
+            
+                    <p class="text-justify">
+                        He graduated from Cochrane High School in 2012 and began tutoring in 2013. Over the years, he has strengthened his ability to simplify challenging
+                        concepts, communicate them effectively, and to teach problem solving skills to his
+                        students. He is passionate about fostering understanding, critical thinking, and empathy
+                        in himself and in others.
+                    </p>
+            
+                    <p class="text-justify">
+                        Stéphane is an avid rock climber, guitarist, and cook. He enjoys spending time in the
+                        mountains, gaming with friends, and working on personal projects.
                     </p>
                 </div>
             </div>
-            <div class="faq__item">
-                <button type="button" class="collapsible">
-                    How do you meet with your students?
-                    <div class="arrow-down"></div>
-                </button>
-                <div class="content">
-                    <p>
-                        I meet my students using <a href="https://zoom.us/">Zoom</a>, a video conferencing app. More info on teaching can be found here.
-                    </p>
+            <div class="col-md-4">
+                <div class="container">
+                    <img src="images/bio_profile2.jpg" class="img-fluid rounded py-4">
                 </div>
             </div>
-            <div class="faq__item">
-                <button type="button" class="collapsible">
-                    When do I pay?
-                    <div class="arrow-down"></div>
-                </button>
-                <div class="content">
-                    <p>
-                        Invoices are sent at the end of each month, payable within 30 days.
-                    </p>
-                </div>
+            <div class="col-md-1 d-none d-md-flex"></div>
+        </div>
+        </div>
+
+        <!-- REGISTER SECTION -->
+        <div class="anchor" id="register"></div>
+        <div class="row bg-light">
+            <div class="col-md">
+                Register
             </div>
         </div>
-    </div>
-    
-    <script src="app.js"></script>
+
+        
+        <!-- FAQ SECTION -->
+        <div class="anchor" id="faq"></div>
+        <div class="row">
+            <div class="col-md">
+                FAQ
+            </div>
+        </div>
+
+        
+        <!-- TESTIMONIALS SECTION -->
+        <div class="row bg-light">
+            <div class="col-md">
+                Testimonials
+            </div>
+        </div>
+
+        
+        <!-- FOOTER SECTION -->
+        <div class="row bg-warning" style="min-height: calc(50vh - 50px)">
+            <div class="col-md-5">
+                Footer
+            </div>
+            <div class="col-md-7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80019.3173825422!2d-114.54254070398368!3d51.189527393182416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371408275572407%3A0x500a39043510e80!2sCochrane%2C%20AB!5e0!3m2!1sen!2sca!4v1620247583910!5m2!1sen!2sca" style="width: 100%; height: 100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
