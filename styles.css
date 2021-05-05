@@ -1,3 +1,14 @@
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
 /* Anchor */
 /*  Provides vertical adjustment to sections to accomodate the navbar */
 .anchor {
@@ -8,10 +19,19 @@
 /* Parallax */
 /*  Parallax support for a parallax image effect */
 .parallax {
-    min-height: 100vh;
+    min-height: 80vh;
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* col-md-* */
+/*  Provides responsive height and alignment to columns */
+[class^="col-md"] {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
