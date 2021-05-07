@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-md navbar-light text-center bg-light">
+        <nav class="navbar navbar-expand-md navbar-dark text-center bg-dark" style="border-bottom: 1px solid white;">
           <a class="navbar-brand" href="#">Rocky Tutor</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,17 +40,17 @@
     <main>
         
         <!-- HOME SECTION -->
-        <div class="row">
+        <div class="row bg-light">
             <div class="col-md-1 d-none d-md-flex"></div>
             <div class="col-md-5 d-none d-md-flex">
                 <div class="container">
-                    <img src="images/youveGotThis.jpg" class="img-fluid rounded">
+                    <img src="images/youveGotThis.jpg" class="img-fluid rounded py-4">
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="container">
-                    <h2 class="p-2">Remote Tutoring Services</h2>
-                    <p class="p-2 text-justify">
+                    <h2>Remote Tutoring Services</h2>
+                    <p class="text-justify">
                         Our mission is to help students succeed by building on what they already know.
                         Students are encouraged to communicate their knowledge. This supports learning by allowing them to try to solve
                         problems and questions first, instead of relying on outside help. Their learning is then supported by teaching
@@ -61,20 +61,20 @@
             <div class="col-md-1 d-none d-md-flex"></div>
         </div>
 
-        <div style="background-image: url('images/bio_landscape2.jpg')" class="parallax"></div>
+        <div style="background-image: url('images/bio_landscape.jpg')" class="parallax"></div>
                
         <!-- BIO SECTION -->
         <div class="anchor" id="bio"></div>
-        <div class="row">
+        <div class="row bg-light">
             <div class="col-md-1 d-none d-md-flex"></div>
             <div class="col-md-6">
                 <div class="container">
                     <p class="text-justify">
-                        <b style="font-size: 1.3rem;">Stéphane</b> lives in
+                        <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in 
                         <a href="https://goo.gl/maps/icWVLXvJias8FyRn6" target="_blank" class="link-primary">Cochrane, AB</a>
-                        in the foothills of the Rocky Mountains.
+                        in the foothills of the Rockies.
                         He studies Computer Science at the University
-                        of Calgary with a specialty in Software Engineering.
+                        of Calgary and specializes in Software Engineering.
                     </p>
             
                     <p class="text-justify">
@@ -92,45 +92,114 @@
             </div>
             <div class="col-md-4">
                 <div class="container">
-                    <img src="images/bio_profile2.jpg" class="img-fluid rounded py-4">
+                    <img src="images/bio_profile.jpg" class="img-fluid rounded py-4">
                 </div>
             </div>
             <div class="col-md-1 d-none d-md-flex"></div>
         </div>
         </div>
 
+        
+
+        <!-- FAQ SECTION -->
+        <div class="anchor" id="faq"></div>
+        <div class="row bg-dark">
+            <div class="col-md-5 d-none d-md-flex">
+                <div class="container text-white">
+                    <h3 class="text-right">Frequently</h3>
+                    <h3 class="text-right">Asked</h3>
+                    <h3 class="text-right">Questions</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container p-5">
+                    <div class="container d-md-none">
+                        <h3 class="text-white text-center py-3">Frequently Asked Questions</h3>
+                    </div>
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        
+
         <!-- REGISTER SECTION -->
         <div class="anchor" id="register"></div>
         <div class="row bg-light">
             <div class="col-md">
-                Register
+                <h3>Register</h3>
             </div>
         </div>
-
         
-        <!-- FAQ SECTION -->
-        <div class="anchor" id="faq"></div>
-        <div class="row">
-            <div class="col-md">
-                FAQ
-            </div>
-        </div>
 
-        
         <!-- TESTIMONIALS SECTION -->
-        <div class="row bg-light">
+        <div class="row bg-dark text-white">
             <div class="col-md">
-                Testimonials
+                <h3>Testimonials</h3>
             </div>
         </div>
 
-        
+        <div style="background-image: url('images/bowlake2.jpg')" class="parallax"></div>
+
+
         <!-- FOOTER SECTION -->
-        <div class="row bg-warning" style="min-height: calc(50vh - 50px)">
-            <div class="col-md-5">
-                Footer
+        <div class="row bg-light">
+            <div class="col-md-5 flex-column">
+                <p class=""><h5>Still have questions?</h5></p>
+                <p class="">
+                    <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
+                </p>
+                <br><br>
+                <p>
+                    <a class="link" href="https://getbootstrap.com/" target="_blank">Built with Bootstrap</a>
+                </p>
+                <p>Last Updated: 2021-05-06</p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 d-none d-md-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80019.3173825422!2d-114.54254070398368!3d51.189527393182416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371408275572407%3A0x500a39043510e80!2sCochrane%2C%20AB!5e0!3m2!1sen!2sca!4v1620247583910!5m2!1sen!2sca" style="width: 100%; height: 100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
