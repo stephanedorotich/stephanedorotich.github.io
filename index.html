@@ -3,214 +3,348 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Rocky Tutor</title>
   </head>
   <body>
+    <!-- Navbar -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-md navbar-dark text-center bg-dark" style="border-bottom: 1px solid white;">
-          <a class="navbar-brand" href="#">Rocky Tutor</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#bio">Bio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#faq">FAQ</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav navbar-right">
-              <li class="nav-item">
-                  <a role="button" class="btn btn-primary" href="#register">
-                      Register
-                  </a>
-              </li>
+      <nav class="navbar navbar-expand-md navbar-dark text-center bg-dark" style="border-bottom: 1px solid white;">
+        <!-- Company Name / Logo -->
+        <a class="navbar-brand" href="#">Rocky Tutor</a>
+
+        <!-- Hamburger Menu Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Left Side -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
           </ul>
-          </div>
-        </nav>
+
+          <!-- Right Side -->
+          <ul class="navbar-nav navbar-right">
+              <li class="nav-item"><a role="button" class="btn btn-primary" href="#register">Register</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     
-  <div style="overflow-x: hidden; position: relative">
-    <main>
-        
-        <!-- HOME SECTION -->
-        <div class="row bg-light">
-            <div class="col-md-1 d-none d-md-flex"></div>
-            <div class="col-md-5 d-none d-md-flex">
-                <div class="container">
-                    <img src="images/youveGotThis.jpg" class="img-fluid rounded py-4">
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="container">
-                    <h2>Remote Tutoring Services</h2>
-                    <p class="text-justify">
-                        Our mission is to help students succeed by building on what they already know.
-                        Students are encouraged to communicate their knowledge. This supports learning by allowing them to try to solve
-                        problems and questions first, instead of relying on outside help. Their learning is then supported by teaching
-                        and instruction to help them build accurate and effective conceptual models for their topics.
-                    </p>
-                </div>  
-            </div>
-            <div class="col-md-1 d-none d-md-flex"></div>
+    <main style="overflow-x: hidden; position: relative">
+      <!-- HOME SECTION -->
+      <div class="row bg-light">
+        <!-- Padding Column -->
+        <div class="col-md-1 d-none d-md-flex"></div>
+
+        <!-- Picture -->
+        <div class="col-md-5 d-none d-md-flex">
+          <img src="images/youveGotThis.jpg" class="img-fluid rounded" style="max-height: 80vh">
         </div>
 
-        <div style="background-image: url('images/bio_landscape.jpg')" class="parallax"></div>
-               
-        <!-- BIO SECTION -->
-        <div class="anchor" id="bio"></div>
-        <div class="row bg-light">
-            <div class="col-md-1 d-none d-md-flex"></div>
-            <div class="col-md-6">
-                <div class="container">
-                    <p class="text-justify">
-                        <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in 
-                        <a href="https://goo.gl/maps/icWVLXvJias8FyRn6" target="_blank" class="link-primary">Cochrane, AB</a>
-                        in the foothills of the Rockies.
-                        He studies Computer Science at the University
-                        of Calgary and specializes in Software Engineering.
-                    </p>
-            
-                    <p class="text-justify">
-                        He graduated from Cochrane High School in 2012 and began tutoring in 2013. Over the years, he has strengthened his ability to simplify challenging
-                        concepts, communicate them effectively, and to teach problem solving skills to his
-                        students. He is passionate about fostering understanding, critical thinking, and empathy
-                        in himself and in others.
-                    </p>
-            
-                    <p class="text-justify">
-                        Stéphane is an avid rock climber, guitarist, and cook. He enjoys spending time in the
-                        mountains, gaming with friends, and working on personal projects.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="container">
-                    <img src="images/bio_profile.jpg" class="img-fluid rounded py-4">
-                </div>
-            </div>
-            <div class="col-md-1 d-none d-md-flex"></div>
-        </div>
-        </div>
-
-        
-
-        <!-- FAQ SECTION -->
-        <div class="anchor" id="faq"></div>
-        <div class="row bg-dark">
-            <div class="col-md-5 d-none d-md-flex">
-                <div class="container text-white">
-                    <h3 class="text-right">Frequently</h3>
-                    <h3 class="text-right">Asked</h3>
-                    <h3 class="text-right">Questions</h3>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="container p-5">
-                    <div class="container d-md-none">
-                        <h3 class="text-white text-center py-3">Frequently Asked Questions</h3>
-                    </div>
-                    <div id="accordion">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Collapsible Group Item #1
-                              </button>
-                            </h5>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <!-- REGISTER SECTION -->
-        <div class="anchor" id="register"></div>
-        <div class="row bg-light">
-            <div class="col-md">
-                <h3>Register</h3>
-            </div>
+        <!-- Site Description -->
+        <div class="col-md-5">
+          <div class="container">
+            <h2>Remote Tutoring Services</h2>
+            <p class="text-justify">
+              Our mission is to help students succeed by building on what they already know.
+              Students are encouraged to communicate their knowledge. This supports learning by allowing them to try to solve
+              problems and questions first, instead of relying on outside help. Their learning is then supported by teaching
+              and instruction to help them build accurate and effective conceptual models for their topics.
+            </p>
+          </div>  
         </div>
         
+        <!-- Padding Column -->
+        <div class="col-md-1 d-none d-md-flex"></div>
+      </div>
 
-        <!-- TESTIMONIALS SECTION -->
-        <div class="row bg-dark text-white">
-            <div class="col-md">
-                <h3>Testimonials</h3>
+      <!-- PARALLAX BACKGROUND IMAGE -->
+      <div style="background-image: url('images/bio_landscape.jpg')" class="parallax"></div>
+
+      <!-- BIOGRAPHY SECTION -->
+      <div class="anchor" id="bio"></div>
+      <div class="row bg-light">
+        <!-- Padding Column -->
+        <div class="col-md-1 d-none d-md-flex"></div>
+        
+        <!-- Written Biography -->
+        <div class="col-md-6">
+          <div class="container py-3">
+            <p class="text-justify">
+              <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in 
+              <a href="https://goo.gl/maps/icWVLXvJias8FyRn6" target="_blank" class="link-primary">Cochrane, AB</a>
+              in the foothills of the Rockies.
+              He studies Computer Science at the University
+              of Calgary and specializes in Software Engineering.
+            </p>
+            <p class="text-justify">
+              He graduated from Cochrane High School in 2012 and began tutoring in 2013.
+              Over the years, he has developed his ability to simplify
+              concepts, identify student needs, and teach problem solving skills.
+              He is passionate about fostering understanding, critical thinking, and empathy
+              in himself and in others.
+            </p>   
+            <p class="text-justify">
+              Stéphane is an avid rock climber, guitarist, and cook. He enjoys spending time in the
+              mountains, gaming with friends, and working on personal projects.
+            </p>
+
+            <!-- Mobile Responsive Biography Picture -->
+            <div class="container d-md-none py-3">
+              <img src="images/bio_profile.jpg" class="img-fluid rounded" style="max-height: 80vh">
             </div>
+          </div>
         </div>
 
-        <div style="background-image: url('images/bowlake2.jpg')" class="parallax"></div>
-
-
-        <!-- FOOTER SECTION -->
-        <div class="row bg-light">
-            <div class="col-md-5 flex-column">
-                <p class=""><h5>Still have questions?</h5></p>
-                <p class="">
-                    <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
-                </p>
-                <br><br>
-                <p>
-                    <a class="link" href="https://getbootstrap.com/" target="_blank">Built with Bootstrap</a>
-                </p>
-                <p>Last Updated: 2021-05-06</p>
-            </div>
-            <div class="col-md-7 d-none d-md-flex">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80019.3173825422!2d-114.54254070398368!3d51.189527393182416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371408275572407%3A0x500a39043510e80!2sCochrane%2C%20AB!5e0!3m2!1sen!2sca!4v1620247583910!5m2!1sen!2sca" style="width: 100%; height: 100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <!-- Biography Picture -->
+        <div class="col-md-4 d-none d-md-flex">
+          <img src="images/bio_profile.jpg" class="img-fluid rounded" style="max-height: 80vh">
         </div>
+
+        <!-- Padding Column -->
+        <div class="col-md-1 d-none d-md-flex"></div>
+      </div>
+    
+      <!-- FAQ SECTION -->
+      <div class="anchor" id="faq"></div>
+      <div class="row bg-dark">
+
+        <!-- Section Title -->
+        <div class="col-md-4 d-none d-md-flex">
+          <div class="container text-white">
+            <h2 class="text-right">Frequently</h2>
+            <h2 class="text-right">Asked</h2>
+            <h2 class="text-right">Questions</h2>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="col-md-7">
+          <div class="container py-3">
+            <!-- Mobile-Responsive Title -->
+            <div class="container d-md-none">
+                <h3 class="text-white text-center py-3">Frequently Asked Questions</h3>
+            </div>
+            <!-- Questions & Answers -->
+            <div id="accordion">
+
+              <!-- What subjects do you teach? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headerOne">
+                  <button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5 class="mb-0 text-light">What subjects do you teach?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    I teach the following subjects (based on the Alberta curriculum):
+                    <br><br>
+                    <table class="table table-success">
+                      <thead>
+                        <tr>
+                          <th scope="col">Subject</th>
+                          <th scope="col">Grade(s)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Science</td>
+                          <td>8 - 12</td>
+                        </tr>
+                        <tr>
+                          <td>Math</td>
+                          <td>8 - 12</td>
+                        </tr>
+                        <tr>
+                          <td>Chemistry</td>
+                          <td>10 - 12</td>
+                        </tr>
+                        <tr>
+                          <td>Physics</td>
+                          <td>10 - 12</td>
+                        </tr>
+                        <tr>
+                          <td>Math31 (Calculus)</td>
+                          <td>12</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- How much does it cost? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headingFive">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h5 class="mb-0 text-light">How much does it cost?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    My rate is 40$ per hour.</div>
+                </div>
+              </div>
+
+              <!-- Do you teach in-person? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headingTwo">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h5 class="mb-0 text-light">Do you teach in person?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    No. <br> I hope to resume in-home tutoring this fall.
+                  </div>
+                </div>
+              </div>
+
+              <!-- How do you meet with students? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headingThree">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h5 class="mb-0 text-light">How do you meet with students?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    I tutor using Zoom, the video-conferencing app. <br>
+                    Using my tablet & screenshare, students
+                    benefit from seeing all diagrams, equations, and solutions I write and draw
+                    as we work through concepts and problems.</div>
+                </div>
+              </div>
+
+              <!-- Do I need to sign up for multiple sessions? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headingEight">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h5 class="mb-0 text-light">Do I need to sign up for multiple sessions?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                  <div class="card-body">
+                    No. I understand the importance of finding the right fit for your student.
+                    There is no fixed number of sessions you need to sign up for.
+                    We start with one, and go from there.
+                  </div>
+                </div>
+              </div>
+
+              <!-- What happens if a student misses a session? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headingNine">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <h5 class="mb-0 text-light">What happens if a student is absent?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                  <div class="card-body">
+                    A 25$ fee is charged for missed sessions.
+                    <br>
+                    If the absenteeism is reported at least 1 day
+                    in advance, then no fee is charged.
+                  </div>
+                </div>
+              </div>
+              
+              <!-- When do I pay? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headingSix">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h5 class="mb-0 text-light">When do I pay?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    Invoices are sent by e-mail at the end of each month. They are payable within
+                    30 days.
+                  </div>
+                </div>
+              </div>
+              
+              <!-- How do I pay? -->
+              <div class="card border-primary">
+                <!-- Question -->
+                <div class="card-header bg-primary" id="headingSeven">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <h5 class="mb-0 text-light">How do I pay?</h5>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                    Payment is accepted by e-transfer.
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- REGISTER SECTION -->
+      <div class="anchor" id="register"></div>
+      <div class="row bg-light">
+        <div class="col-md">
+          <h3>Register</h3>
+        </div>
+      </div>
+
+      <!-- TESTIMONIALS SECTION -->
+      <div class="row bg-dark text-white">
+        <div class="col-md">
+          <h3>Testimonials</h3>
+        </div>
+      </div>
+
+      <!-- PARALLAX BACKGROUND IMAGE -->
+      <div style="background-image: url('images/bowlake2.jpg')" class="parallax"></div>
+
+      <!-- FOOTER SECTION -->
+      <div class="row bg-light">
+        <div class="col-md-5 flex-column">
+          <p class=""><h5>Still have questions?</h5></p>
+          <p class="">
+            <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
+          </p>
+          <br><br>
+          <p>
+            <a class="link" href="https://getbootstrap.com/" target="_blank">Built with Bootstrap</a>
+          </p>
+            <p>Last Updated: 2021-05-06</p>
+        </div>
+        <div class="col-md-7 d-none d-md-flex">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80019.3173825422!2d-114.54254070398368!3d51.189527393182416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371408275572407%3A0x500a39043510e80!2sCochrane%2C%20AB!5e0!3m2!1sen!2sca!4v1620247583910!5m2!1sen!2sca" style="width: 100%; height: 100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </main>
-
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </div>
   </body>
 </html>
