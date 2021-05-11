@@ -28,10 +28,6 @@ html {
 
 /* Bootstrap Modifications */
 
-.btn-block {
-    text-align: left;
-}
-
 /* col-md-* */
 /*  Provides responsive height and alignment to columns */
 [class^="col-md"] {
