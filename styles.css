@@ -26,12 +26,15 @@ html {
     background-size: cover;
 }
 
-/* Bootstrap Modifications */
-
-/* col-md-* */
-/*  Provides responsive height and alignment to columns */
-[class^="col-md"] {
+.fullheight {
     min-height: calc(100vh - 50px);
+}
+
+.halfheight {
+   min-height: 50vh;
+}
+
+.centered {
     display: flex;
     justify-content: center;
     align-items: center;
