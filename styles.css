@@ -18,10 +18,6 @@ html {
 /* Parallax */
 /*  Parallax support for a parallax image effect */
 .parallax {
-    min-height: 80vh;
-    bottom: 0;
-    left: 0;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
