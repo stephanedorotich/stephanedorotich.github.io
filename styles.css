@@ -21,6 +21,7 @@ html {
     min-height: 80vh;
     top: 50px;
     left: 0;
+    transition: all ease-in-out 0.7s;
 
     background-attachment: fixed;
     background-position: center;
