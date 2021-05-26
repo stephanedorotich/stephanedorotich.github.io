@@ -19,7 +19,7 @@ html {
 /*  Parallax support for a parallax image effect */
 .parallax {
     background-attachment: fixed;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
