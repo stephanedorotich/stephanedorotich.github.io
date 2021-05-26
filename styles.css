@@ -19,9 +19,8 @@ html {
 /*  Parallax support for a parallax image effect */
 .parallax {
     min-height: 80vh;
-    top: 50px;
+    bottom: 0;
     left: 0;
-    transition: all ease-in-out 0.7s;
 
     background-attachment: fixed;
     background-position: center;
