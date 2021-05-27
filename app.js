@@ -1,4 +1,4 @@
-var parallax_height = (0.8*$(window).height())+"px";
+const parallax_height = (0.8*$(window).height())+"px";
 
 var parallax_images = document.getElementsByClassName('parallax');
 
