@@ -15,21 +15,54 @@ html {
     margin-top: -50px;
 }
 
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    flex: 1 1 150px;
+}
+
 /* Parallax */
 /*  Parallax support for a parallax image effect */
 .parallax {
     background-attachment: fixed;
-    background-position: left bottom;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax-box {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.parallax-img {
+    object-fit: fill;
+    max-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+.heroimage {
+    min-width: 600px;
 }
 
 .fullheight {
     min-height: calc(100vh - 50px);
 }
+.padded {
+    padding: 90px 40px;
+}
 
 .maxfullheight {
     height: calc(100vh - 50px);
+    overflow-y: hidden;
 }
 
 .halfheight {

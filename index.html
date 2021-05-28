@@ -39,15 +39,11 @@
     
     <main style="overflow-x: hidden; position: relative;">
       <!-- HOME SECTION -->
-      <div class="row bg-light">
-
-        <!-- Picture -->
-        <div class="col-md-6 d-none d-md-flex maxfullheight parallax" style="background-image: url('images/ice.jpg'); background-size: contain">
-          <!-- <img src="images/ice.jpg" class="img-fluid"> -->
+      <div class="parent">
+        <div class="box d-none d-md-flex maxfullheight centered bg-dark" style="max-width: 43%; overflow: hidden">
+          <img src="images/ice.jpg" class="img-fluid heroimage fullheight" style="overflow: hidden">
         </div>
-
-        <!-- Site Description -->
-        <div class="col-md-4 fullheight centered">
+        <div class="box centered fullheight p-4 bg-light">
           <div class="container">
             <h1 class="display-4">Online Tutoring Services</h1>
             <p class="text-justify">
@@ -56,18 +52,15 @@
             <a class="btn btn-lg btn-primary" href="#testimonials">Testimonials</a>
           </div>
         </div>
-        
-        <!-- Padding Column -->
-        <div class="col-md-2"></div>
       </div>
-
-      <!-- PARALLAX BACKGROUND IMAGE -->
-      <!-- <div style="background-image: url('images/bowhut_2019.jpg')" class="parallax"></div> -->
-
       
+
       <!-- TESTIMONIALS SECTION -->
       <div class="anchor" id="testimonials"></div>
-      <div class="row parallax" style="background-image: url('images/bowlake_2019.jpg')" style="z-index: 200;" >
+      <div class="row">
+        <div class="parallax-box bg-primary">
+          <img src="images/bowlake_2019.jpg" class="parallax-img">
+        </div>
         
         <div class="col-md-2"></div>
         
@@ -193,10 +186,10 @@
 
         <!-- FAQ -->
         <div class="col-md-5 fullheight centered">
-          <div class="container">
+          <div class="container py-4">
             <!-- Mobile-Responsive Title -->
             <div class="container d-md-none">
-                <h3 class="text-white text-center py-3 display-4">Frequently Asked Questions</h3>
+                <h3 class="text-center py-3 display-4">Frequently Asked Questions</h3>
             </div>
             <!-- Questions & Answers -->
             <div id="accordion">
@@ -349,7 +342,7 @@
       </div>
 
       <!-- BIOGRAPHY SECTION -->
-      <div class="anchor" id="bio"></div>
+      <!-- <div class="anchor-padded" id="bio"></div> -->
 
       <!-- FOOTER SECTION -->
       <div class="row parallax" style="background-image: url('images/bowhut_2019.jpg')">
@@ -358,8 +351,8 @@
         <div class="col-md-2"></div>
         
         <!-- Bio -->
-        <div class="col-md-8 fullheight centered flex-column">
-          <div class="container centered flex-column flex-lg-row bg-light rounded my-5">
+        <div class="col-md-8 padded centered flex-column" id="bio">
+          <div class="container centered flex-column flex-lg-row bg-light rounded">
             <div class="container p-4">
               <p class="text-justify">
                 <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in 
@@ -389,7 +382,7 @@
         <!-- Padding Column -->
         <div class="col-md-2"></div>
 
-        <div class="col-md-12 fullheight d-flex justify-content-end flex-column">
+        <div class="col-md-12 d-flex justify-content-end flex-column">
           <div class="row bg-light d-flex flex-column">
             <div class="container centered flex-column p-4">
               <p>
