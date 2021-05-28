@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>SD Tutoring</title>
+    <title>Stéphane's Tutoring Service</title>
   </head>
   <body>
     <!-- Navbar -->
     <header class="sticky-top">
       <nav class="navbar navbar-expand-md navbar-dark text-center bg-dark" style="border-bottom: 1px solid white;">
         <!-- Company Name / Logo -->
-        <a class="navbar-brand" href="#">SD Tutoring</a>
+        <a class="navbar-brand" href="#">Stéphane's Tutoring</a>
 
         <!-- Hamburger Menu Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +24,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <!-- Left Side -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
             <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bio">About Me</a></li>
           </ul>
 
           <!-- Right Side -->
@@ -41,255 +40,34 @@
     <main style="overflow-x: hidden; position: relative;">
       <!-- HOME SECTION -->
       <div class="row bg-light">
-        <!-- Padding Column -->
-        <div class="col-md-1"></div>
 
         <!-- Picture -->
-        <div class="col-md-5 d-none d-md-flex fullheight centered">
-          <img src="images/youveGotThis.jpg" class="img-fluid rounded" style="max-height: 80vh">
+        <div class="col-md-6 d-none d-md-flex maxfullheight parallax" style="background-image: url('images/ice.jpg'); background-size: contain">
+          <!-- <img src="images/ice.jpg" class="img-fluid"> -->
         </div>
 
         <!-- Site Description -->
-        <div class="col-md-5 fullheight centered">
+        <div class="col-md-4 fullheight centered">
           <div class="container">
             <h1 class="display-4">Online Tutoring Services</h1>
             <p class="text-justify">
-              My mission is to help students grow in self-efficacy. I challenge students to develop their own
-              models of understanding by prompting them to share their knowledge. This practice reinforces
-              memory, encourages independent thinking, and helps me assess their comfort
-              with the topic. I specialize in teaching Math, Chemistry, and Physics.
+              I offer online tutoring for Math, Science, Physics, and Chemistry.
             </p>
-            <a class="btn btn-lg btn-danger" href="#testimonials">Testimonials</a>
+            <a class="btn btn-lg btn-primary" href="#testimonials">Testimonials</a>
           </div>
         </div>
         
         <!-- Padding Column -->
-        <div class="col-md-1"></div>
+        <div class="col-md-2"></div>
       </div>
 
       <!-- PARALLAX BACKGROUND IMAGE -->
-      <div style="background-image: url('images/bowhut_2019.jpg')" class="parallax"></div>
-
-      <!-- BIOGRAPHY SECTION -->
-      <div class="anchor" id="bio"></div>
-      <div class="row bg-light">
-        <!-- Padding Column -->
-        <div class="col-md-1"></div>
-        
-        <!-- Bio -->
-        <div class="col-md-6 fullheight centered py-4">
-          <div class="container">
-            <p class="text-justify">
-              <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in 
-              <a href="https://en.wikipedia.org/wiki/Cochrane,_Alberta" target="_blank" class="link-primary">Cochrane, AB</a>
-              in the foothills of the Rockies.
-              He studies Computer Science at the University
-              of Calgary and specializes in Software Engineering.
-            </p>
-            <p class="text-justify">
-              He graduated from Cochrane High School in 2012 and began tutoring in 2013.
-              Over the years, he has developed his ability to identify student needs,
-              simplify concepts, and teach problem solving skills. He is passionate about
-              fostering understanding, critical thinking, and empathy in himself and in others.
-            </p>   
-            <p class="text-justify">
-              Stéphane is an avid rock climber, guitarist, and cook. You might find him in the
-              mountains, gaming with friends, or making a fresh batch of granola when he's not
-              busy with his studies.
-            </p>
-
-            <!-- Mobile Responsive Biography Picture -->
-            <div class="container d-md-none py-3 d-flex justify-content-center">
-              <img src="images/profile.jpg" class="img-fluid rounded" style="max-height: 80vh">
-            </div>
-          </div>
-        </div>
-
-        <!-- Biography Picture -->
-        <div class="col-md-4 d-none d-md-flex fullheight centered">
-          <img src="images/profile.jpg" class="img-fluid rounded" style="max-height: 80vh">
-        </div>
-
-        <!-- Padding Column -->
-        <div class="col-md-1"></div>
-      </div>
-    
-      <!-- FAQ SECTION -->
-      <div class="anchor" id="faq"></div>
-      <div class="row bg-dark">
-
-        <!-- Section Title -->
-        <div class="col-md-4 d-none d-md-flex centered">
-          <div class="container text-white">
-            <h1 class="text-right display-4">Frequently</h1>
-            <h1 class="text-right display-4">Asked</h1>
-            <h1 class="text-right display-4">Questions</h1>
-          </div>
-        </div>
-
-        <!-- FAQ -->
-        <div class="col-md-7 fullheight centered">
-          <div class="container py-4">
-            <!-- Mobile-Responsive Title -->
-            <div class="container d-md-none">
-                <h3 class="text-white text-center py-3 display-4">Frequently Asked Questions</h3>
-            </div>
-            <!-- Questions & Answers -->
-            <div id="accordion">
-
-              <!-- What subjects do you tutor? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headerOne">
-                  <button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h6 class="mb-0 text-left">What subjects do you tutor?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body">
-                    I tutor the following subjects (based on the Alberta curriculum):
-                    <br><br>
-                    <table class="table table-info table-sm">
-                      <thead>
-                        <tr>
-                          <th scope="col">Subject</th>
-                          <th scope="col">Grade(s)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Math</td>
-                          <td>8 - 12</td>
-                        </tr>
-                        <tr>
-                          <td>Science</td>
-                          <td>8 - 12</td>
-                        </tr>
-                        <tr>
-                          <td>Chemistry</td>
-                          <td>10 - 12</td>
-                        </tr>
-                        <tr>
-                          <td>Physics</td>
-                          <td>10 - 12</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- How much does it cost? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headingFive">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <h6 class="mb-0 text-left">How much does it cost?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                  <div class="card-body">
-                    My rate is 50$ per hour.</div>
-                </div>
-              </div>
-
-              <!-- Do you teach in-person? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headingTwo">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <h6 class="mb-0 text-left">Do you teach in person?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    No. <br> I hope to resume in-home tutoring this fall.
-                  </div>
-                </div>
-              </div>
-
-              <!-- How do you meet with students? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headingThree">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h6 class="mb-0 text-left">How do you meet with students?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                    I tutor using Zoom. <br>
-                    By screensharing my tablet, students see everything I write and
-                    draw as we work.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Do I need to sign up for multiple sessions? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headingEight">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    <h6 class="mb-0 text-left">Do I need to sign up for multiple sessions?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                  <div class="card-body">
-                    No. I understand the importance of finding the right fit for your student.
-                    There is no fixed number of sessions you need to sign up for.
-                    We start with one, and go from there.
-                  </div>
-                </div>
-              </div>
-
-              <!-- What happens if a student misses a session? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headingNine">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                    <h6 class="mb-0 text-left">What happens if a student is absent?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
-                  <div class="card-body">
-                    A 25$ fee is charged for missed sessions.
-                    <br>
-                    If the absenteeism is reported at least one day
-                    in advance, then no fee is charged.
-                  </div>
-                </div>
-              </div>
-              
-              <!-- How does payment work? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headingSix">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    <h6 class="mb-0 text-left">How does payment work?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                  <div class="card-body">
-                    Invoices are sent at the end of each month and are <u>payable by e-transfer</u>.
-                  </div>
-                </div>
-              </div>             
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- <div style="background-image: url('images/bowhut_2019.jpg')" class="parallax"></div> -->
 
       
       <!-- TESTIMONIALS SECTION -->
       <div class="anchor" id="testimonials"></div>
-      <div class="row parallax" style="background-image: url('images/bowlake_2019.jpg')">
+      <div class="row parallax" style="background-image: url('images/bowlake_2019.jpg')" style="z-index: 200;" >
         
         <div class="col-md-2"></div>
         
@@ -398,29 +176,258 @@
         <div class="col-md-2"></div>
       </div>
 
-      <!-- FOOTER SECTION -->
+      
+    
+      <!-- FAQ SECTION -->
+      <div class="anchor" id="faq"></div>
       <div class="row bg-light">
-        <div class="col-md-5 fullheight flex-column centered">
-          <p class=""><h5>Still have questions?</h5></p>
-          <p class="">
+
+        <!-- Section Title -->
+        <div class="col-md-5 d-none d-md-flex centered">
+          <div class="container">
+            <h1 class="text-right display-4">Frequently</h1>
+            <h1 class="text-right display-4">Asked</h1>
+            <h1 class="text-right display-4">Questions</h1>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="col-md-5 fullheight centered">
+          <div class="container">
+            <!-- Mobile-Responsive Title -->
+            <div class="container d-md-none">
+                <h3 class="text-white text-center py-3 display-4">Frequently Asked Questions</h3>
+            </div>
+            <!-- Questions & Answers -->
+            <div id="accordion">
+
+              <!-- What subjects do you tutor? -->
+              <div class="card">
+                <!-- Question -->
+                <div class="card-header" id="headerOne">
+                  <button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h6 class="mb-0 text-left">What subjects do you tutor?</h6>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <table class="table table-info table-sm">
+                      <thead>
+                        <tr>
+                          <th>Subject</th>
+                          <th>Grades</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Math</td>
+                          <td>8 - 12</td>
+                        </tr>
+                        <tr>
+                          <td>Science</td>
+                          <td>8 - 12</td>
+                        </tr>
+                        <tr>
+                          <td>Chemistry</td>
+                          <td>10 - 12</td>
+                        </tr>
+                        <tr>
+                          <td>Physics</td>
+                          <td>10 - 12</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- How much does it cost? -->
+              <div class="card">
+                <!-- Question -->
+                <div class="card-header" id="headingFive">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h6 class="mb-0 text-left">How much does it cost?</h6>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    My rate is 50$ per hour.</div>
+                </div>
+              </div>
+
+              <!-- Do you teach in-person? -->
+              <div class="card">
+                <!-- Question -->
+                <div class="card-header" id="headingTwo">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h6 class="mb-0 text-left">Do you teach in person?</h6>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    No. <br> I hope to resume in-home tutoring for Cochrane and NW Calgary this fall.
+                  </div>
+                </div>
+              </div>
+
+              <!-- How do you meet with students? -->
+              <div class="card">
+                <!-- Question -->
+                <div class="card-header" id="headingThree">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h6 class="mb-0 text-left">How do you meet with students?</h6>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    I tutor using Zoom. <br>
+                    By screensharing my tablet, students see everything I write and
+                    draw as we work.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Do I need to sign up for multiple sessions? -->
+              <div class="card">
+                <!-- Question -->
+                <div class="card-header" id="headingEight">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h6 class="mb-0 text-left">Do I need to sign up for multiple sessions?</h6>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                  <div class="card-body">
+                    No. I understand the importance of finding the right fit for your student.
+                    There is no fixed number of sessions you need to sign up for.
+                    We start with one, and go from there.
+                  </div>
+                </div>
+              </div>
+
+              <!-- What happens if a student misses a session? -->
+              <div class="card">
+                <!-- Question -->
+                <div class="card-header" id="headingNine">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <h6 class="mb-0 text-left">What happens if a student is absent?</h6>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                  <div class="card-body">
+                    A 25$ fee is charged for missed sessions.
+                    <br>
+                    If the absenteeism is reported at least one day
+                    in advance, then no fee is charged.
+                  </div>
+                </div>
+              </div>
+              
+              <!-- How does payment work? -->
+              <div class="card">
+                <!-- Question -->
+                <div class="card-header" id="headingSix">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h6 class="mb-0 text-left">How does payment work?</h6>
+                  </button>
+                </div>
+                <!-- Answer -->
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    Invoices are sent by email at the end of each month. They are payable by e-transfer.
+                  </div>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BIOGRAPHY SECTION -->
+      <div class="anchor" id="bio"></div>
+
+      <!-- FOOTER SECTION -->
+      <div class="row parallax" style="background-image: url('images/bowhut_2019.jpg')">
+        
+        <!-- Padding Column -->
+        <div class="col-md-2"></div>
+        
+        <!-- Bio -->
+        <div class="col-md-8 fullheight centered flex-column">
+          <div class="container centered flex-column flex-lg-row bg-light rounded my-5">
+            <div class="container p-4">
+              <p class="text-justify">
+                <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in 
+                <a href="https://en.wikipedia.org/wiki/Cochrane,_Alberta" target="_blank" class="link-primary">Cochrane, AB</a>
+                in the foothills of the Rockies.
+                He studies Computer Science at the University
+                of Calgary and specializes in Software Engineering.
+              </p>
+              <p class="text-justify">
+                He graduated from Cochrane High School in 2012 and began tutoring in 2013.
+                Over the years, he has developed his ability to identify student needs,
+                simplify concepts, and teach problem solving skills. He is passionate about
+                fostering critical thinking and empathy in himself and in others.
+              </p>   
+              <p class="text-justify">
+                Stéphane is an avid rock climber, guitarist, and cook. You might find him in the
+                mountains, gaming with friends, or making a fresh batch of granola when he's not
+                busy with his studies.
+              </p>
+            </div>
+            <!-- Biography Picture -->
+            <div class="container p-4">
+              <img src="images/profile.jpg" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+        <!-- Padding Column -->
+        <div class="col-md-2"></div>
+
+        <div class="col-md-12 fullheight d-flex justify-content-end flex-column">
+          <div class="row bg-light d-flex flex-column">
+            <div class="container centered flex-column p-4">
+              <p>
+                <h5>Still have questions?</h5>
+                <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
+              </p>
+              <a class="btn btn-lg m-4 btn-primary" href="register.html">Register</a>
+              <p>
+                Last updated: 2021-05-28
+              </p>
+              <p class="text-center">
+                Built with
+                <a class="link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                <br>
+                Hosted on
+                <a class="link" href="https://github.com/" target="_blank">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-12 fullheight d-flex justify-content-center align-items-center flex-column">
+          <div class="d-inline-flex p-4 bg-light rounded centered flex-column">
+            <h5>Still have questions?</h5>
             <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
-          </p>
+            <a class="btn btn-lg m-4 btn-primary" href="register.html">Register</a>
+            <p>Last updated: 2021-05-25</p>
+            <span>
+              Built with
+              <a class="link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+            </span>
+            <span>
+              Hosted on
+              <a class="link" href="https://github.com/" target="_blank">GitHub</a>
+            </span>
+          </div>
+        </div> -->
 
-          <a class="my-5 btn btn-lg btn-primary" href="register.html">Register</a>
-
-          <p>Last updated: 2021-05-25</p>
-          <p class="text-center">
-            Built with
-            <a class="link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
-            <br>
-            Hosted on
-            <a class="link" href="https://github.com/" target="_blank">GitHub</a>
-          </p>
-          
-        </div>
-        <div class="col-md-7 d-none d-md-flex">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80019.3173825422!2d-114.54254070398368!3d51.189527393182416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371408275572407%3A0x500a39043510e80!2sCochrane%2C%20AB!5e0!3m2!1sen!2sca!4v1620247583910!5m2!1sen!2sca" style="width: 100%; height: 100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
       </div>
     </main>
     <!-- JavaScript -->
