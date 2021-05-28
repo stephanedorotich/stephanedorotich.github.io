@@ -19,13 +19,17 @@ html {
 /*  Parallax support for a parallax image effect */
 .parallax {
     background-attachment: fixed;
-    background-position: center bottom;
+    background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .fullheight {
     min-height: calc(100vh - 50px);
+}
+
+.maxfullheight {
+    height: calc(100vh - 50px);
 }
 
 .halfheight {
