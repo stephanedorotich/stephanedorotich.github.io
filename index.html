@@ -40,14 +40,14 @@
     <main style="overflow-x: hidden; position: relative;">
       <!-- HOME SECTION -->
       <div class="parent">
-        <div class="box d-none d-md-flex maxfullheight centered bg-dark" style="max-width: 43%; overflow: hidden">
-          <img src="images/ice.jpg" class="img-fluid heroimage fullheight" style="overflow: hidden">
+        <div class="box d-none d-sm-flex justify-content-end maxfullheight bg-dark" style="max-width: 43%">
+          <img src="images/ice.jpg" class="heroimage">
         </div>
-        <div class="box centered fullheight p-4 bg-light">
+        <div class="box centered fullheight bg-light">
           <div class="container">
             <h1 class="display-4">Online Tutoring Services</h1>
             <p class="text-justify">
-              I offer online tutoring for Math, Science, Physics, and Chemistry.
+              I offer tutoring for Math, Science, Physics, and Chemistry.
             </p>
             <a class="btn btn-lg btn-primary" href="#testimonials">Testimonials</a>
           </div>
@@ -176,16 +176,19 @@
       <div class="row bg-light">
 
         <!-- Section Title -->
-        <div class="col-md-5 d-none d-md-flex centered">
-          <div class="container">
-            <h1 class="text-right display-4">Frequently</h1>
-            <h1 class="text-right display-4">Asked</h1>
-            <h1 class="text-right display-4">Questions</h1>
+        <div class="col-md-5 d-none fullheight d-md-flex flex-column">
+          <div class="container maxfullheight d-flex justify-content-center flex-column">
+              <h1 class="text-right display-4">Frequently</h1>
+              <h1 class="text-right display-4">Asked</h1>
+              <h1 class="text-right display-4">Questions</h1>
+              <p class="text-right my-3">
+                <a class="btn btn-lg btn-primary" href="register.html" style="width: 248px; max-width: 80%">Register</a>
+              </p>
           </div>
         </div>
 
         <!-- FAQ -->
-        <div class="col-md-5 fullheight centered">
+        <div class="col-md-6 fullheight centered">
           <div class="container py-4">
             <!-- Mobile-Responsive Title -->
             <div class="container d-md-none">
@@ -205,7 +208,7 @@
                 <!-- Answer -->
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
-                    <table class="table table-info table-sm">
+                    <table class="table table-primary table-sm">
                       <thead>
                         <tr>
                           <th>Subject</th>
@@ -337,14 +340,12 @@
                 </div>
               </div>             
             </div>
+            
           </div>
         </div>
       </div>
 
       <!-- BIOGRAPHY SECTION -->
-      <!-- <div class="anchor-padded" id="bio"></div> -->
-
-      <!-- FOOTER SECTION -->
       <div class="anchor" id="bio"></div>
       <div class="row parallax" style="background-image: url('images/bowhut_2019.jpg')">
         
@@ -382,7 +383,11 @@
         </div>
         <!-- Padding Column -->
         <div class="col-md-2"></div>
+      </div>
 
+
+      <!-- FOOTER SECTION -->
+      <div class="row">
         <div class="col-md-12 d-flex justify-content-end flex-column">
           <div class="row bg-light d-flex flex-column">
             <div class="container centered flex-column p-4">
@@ -404,25 +409,10 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="col-md-12 fullheight d-flex justify-content-center align-items-center flex-column">
-          <div class="d-inline-flex p-4 bg-light rounded centered flex-column">
-            <h5>Still have questions?</h5>
-            <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
-            <a class="btn btn-lg m-4 btn-primary" href="register.html">Register</a>
-            <p>Last updated: 2021-05-25</p>
-            <span>
-              Built with
-              <a class="link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
-            </span>
-            <span>
-              Hosted on
-              <a class="link" href="https://github.com/" target="_blank">GitHub</a>
-            </span>
-          </div>
-        </div> -->
-
       </div>
+
+
+
     </main>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
