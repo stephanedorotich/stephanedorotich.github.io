@@ -47,6 +47,14 @@ html {
     bottom: 0;
 }
 
+#bg1 {
+    z-index: -1;
+}
+
+#bg2 {
+    z-index: -2;
+}
+
 .heroimage {
     object-fit: cover;
     min-width: 100%;
