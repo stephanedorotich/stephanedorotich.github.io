@@ -29,7 +29,7 @@ html {
 /*  Parallax support for a parallax image effect */
 .parallax {
     background-attachment: fixed;
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
 }
 
@@ -49,12 +49,15 @@ html {
 }
 
 .heroimage {
-    min-width: 600px;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: auto;
 }
 
 .fullheight {
     min-height: calc(100vh - 50px);
 }
+
 .padded {
     padding: 90px 40px;
 }
