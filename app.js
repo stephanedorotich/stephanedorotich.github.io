@@ -1,7 +1,3 @@
-var ot = document.getElementsByName('faq')[0].offsetTop;
-
-alert("Starting Height: " + ot);
-
 // Catch scroll event
 $( window ).scroll(function() {
     // If user hasn't scrolled past FAQ Section set default z-index
