@@ -1,9 +1,11 @@
 var ot = document.getElementsByName('faq')[0].offsetTop;
 
+alert("Starting Height: " + ot);
+
 // Catch scroll event
 $( window ).scroll(function() {
     // If user hasn't scrolled past FAQ Section set default z-index
-    if ($(this).scrollTop() < ot) {
+    if ($(this).scrollTop() < document.getElementsByName('faq')[0].offsetTop) {
         $("#bg1" ).css( "z-index", -1);
         $("#bg2" ).css( "z-index", -2);
     } else {
