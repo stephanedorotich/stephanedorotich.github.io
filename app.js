@@ -1,13 +1,24 @@
+// Position of FAQ section (breakpoint for switching backgrounds)
+var faqPos;
+
 // Catch scroll event
+// Swap parallax image backgrounds at FAQ section breakpoint.
 $( window ).scroll(function() {
-    // If user hasn't scrolled past FAQ Section set default z-index
-    if ($(this).scrollTop() < document.getElementsByName('faq')[0].offsetTop) {
-        $("#bg1" ).css( "z-index", -1);
-        $("#bg2" ).css( "z-index", -2);
+    // get scroll position
+    var scrollPos = $(this).scrollTop();
+
+    // get position of FAQ section
+    if (window.innerWidth < 768) faqPos += 158;
+
+    // Check scroll position against FAQ section breakpoint
+    if (scrollPos < faqPos) {
+        // User hasn't scrolled past FAQ Section. Background 1 visible
+        if ($("bg1").css('visibility') == 'visible') return;
+        else $("#bg1" ).css( 'visibility', 'visible');
     } else {
-        // If user has scrolled past FAQ Section set z-index for second bg img to show
-        $("#bg1" ).css( "z-index", -2);
-        $("#bg2" ).css( "z-index", -1);
+        // User has scrolled past FAQ Section. Background 2 visible
+        if ($("bg1").css('visibility') == 'hidden') return;
+        else $("#bg1" ).css('visibility', 'hidden');
     }
   });
 
@@ -15,8 +26,10 @@ $( window ).scroll(function() {
 //  Adjusts padding/margins on anchors to accommodate navbar and navbar toggle
 //  Ensures that links scroll to top of anchored sections
 function anchorPadding() {
+    faqPos = document.getElementsByName('faq')[0].offsetTop;
     var anchors = document.getElementsByClassName("anchor");
     if (window.innerWidth < 768) {
+        faqPos += 158;
         for (var i = 0; i < anchors.length; i++) {
             anchors[i].style.paddingTop = "215px";
             anchors[i].style.marginTop = "-215px";
@@ -27,10 +40,7 @@ function anchorPadding() {
             anchors[i].style.marginTop = "-57px";
         }
     };
-};
-
-// Invoke function to add padding/margins to anchors.
-anchorPadding();
+}; anchorPadding(); // Invoke to add margins and padding to anchors.
 
 // Catch resize event
 window.addEventListener("resize", anchorPadding);

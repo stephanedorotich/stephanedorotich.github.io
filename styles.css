@@ -16,24 +16,16 @@ html {
     flex: 1 1 150px;
 }
 
-/* Parallax */
-/*  Parallax support for a parallax image effect */
-.parallax {
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-
 .parallax-box {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
 }
 
 .parallax-img {
     object-fit: fill;
     max-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     position: fixed;
     bottom: 0;
 }
@@ -58,15 +50,6 @@ html {
 
 .padded {
     padding: 90px 40px;
-}
-
-.maxfullheight {
-    height: calc(100vh - 57px);
-    min-height: fit-content;
-}
-
-.halfheight {
-   min-height: 50vh;
 }
 
 .centered {
