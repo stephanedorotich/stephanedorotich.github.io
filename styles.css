@@ -6,14 +6,6 @@ html {
     padding: 0px;
 }
 
-
-/* Anchor */
-/*  Provides vertical adjustment to sections to accomodate the navbar */
-.anchor {
-    padding-top: 57px;
-    margin-top: -57px;
-}
-
 .parent {
     display: flex;
     flex-wrap: wrap;
