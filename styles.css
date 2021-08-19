@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     width: 100%;
+    min-width: 280px;
     height: 100vh;
     margin: 0px;
     padding: 0px;
@@ -10,6 +11,18 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* Smooth scrolling position to account for Navbar */
+.anchor {
+    padding-top: 57px;
+    margin-top: -57px;
+}
+
+/* Smooth scrolling position to account for dropdown Navmenu on mobile */
+.anchor-mobile {
+    padding-top: 208px;
+    margin-top: -208px;
 }
 
 .box {

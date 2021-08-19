@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Stéphane's Tutoring Service</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   </head>
   <body>
     <!-- Navbar -->
@@ -23,12 +24,24 @@
         <!-- Navigation Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <!-- Left Side -->
-          <ul class="navbar-nav mr-auto">
+          <!-- Visible only all md and larger screens -->
+          <ul class="d-none d-md-flex navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="#bio">
               About Me</a></li>
             <li class="nav-item"><a class="nav-link" href="#faq">
               FAQ</a></li>
             <li class="nav-item"><a class="nav-link" href="#testimonials">
+              Testimonials</a></li>
+          </ul>
+
+          <!-- Left Side Mobile -->
+          <!-- Visible only all sm and xs screens -->
+          <ul class="d-flex d-md-none navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#bio-mobile">
+              About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq-mobile">
+              FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials-mobile">
               Testimonials</a></li>
           </ul>
 
@@ -52,7 +65,12 @@
             <p class="lead">
               I offer tutoring for Math, Science, Physics, and Chemistry.
             </p>
-            <a class="btn btn-lg btn-primary" href="inquire.html">Inquire</a>
+            <p>
+              <a class="my-1 btn btn-secondary" href="/#bio">About Me</a>
+              <a class="my-1 btn btn-secondary" href="/#faq">FAQ</a>
+              <a class="my-1 btn btn-secondary" href="/#testimonials">Testimonials</a>
+              <a class="my-1 btn btn-primary" href="inquire.html">Inquire</a>
+            </p>
           </div>
         </div>
       </div>
@@ -60,9 +78,9 @@
 
       
       <!-- BIOGRAPHY SECTION -->
+      <div class="anchor-mobile" id="bio-mobile"></div>
       <div class="anchor" id="bio"></div>
       <div class="row">
-        
         <div class="parallax-box">
           <img class="parallax-img" id="bg1" src="images/bowhut_2019.jpg">
         </div>
@@ -74,16 +92,14 @@
           <div class="container centered flex-column flex-lg-row bg-light rounded">
             <div class="container p-4">
               <p class="text-justify">
-                <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in the foothills of the Rockies
-                in <a href="https://en.wikipedia.org/wiki/Cochrane,_Alberta" target="_blank" class="link-primary">Cochrane, AB</a>.
-                He studies Software Engineering at the University
+                <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in <a href="https://en.wikipedia.org/wiki/Cochrane,_Alberta" target="_blank" class="link-primary">Cochrane, AB</a>
+                in the foothills of the Rockies. He studies Software Engineering at the University
                 of Calgary.
               </p>
               <p class="text-justify">
                 An alumnus of Cochrane High School, Stéphane began tutoring in 2013.
                 Over the years, he has developed his ability to identify student needs,
-                simplify concepts, and teach problem solving skills. He is passionate about
-                fostering critical thinking and empathy.
+                simplify concepts, and teach problem solving skills.
               </p>   
               <p class="text-justify">
                 Stéphane is an avid rock climber, guitarist, and cook. You might find him in the
@@ -104,6 +120,7 @@
       
     
       <!-- FAQ SECTION -->
+      <div class="anchor-mobile" id="faq-mobile"></div>
       <div class="anchor" id="faq" name="faq"></div>
       <div class="row bg-light">
 
@@ -274,6 +291,7 @@
       </div>
 
       <!-- TESTIMONIALS SECTION -->
+      <div class="anchor-mobile" id="testimonials-mobile"></div>
       <div class="anchor" id="testimonials"></div>
       <div class="row">
         <div class="parallax-box bg-primary">
@@ -399,14 +417,16 @@
               </p>
               <a class="btn btn-lg m-4 btn-primary" href="inquire.html">Inquire</a>
               <p>
-                Last updated: 2021-08-17
+                Last updated: 2021-08-19
               </p>
               <p class="text-center">
-                Built with
+                Built with 
                 <a class="link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
                 <br>
                 Hosted on
                 <a class="link" href="https://github.com/" target="_blank">GitHub</a>
+                <br>
+                Designed by me
               </p>
             </div>
           </div>
