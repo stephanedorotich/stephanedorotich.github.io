@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<!--base HTML that every other webpage extends-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+
     <title>Stéphane's Tutoring Service</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
     <!-- Navbar -->
     <header class="sticky-top">
       <nav class="navbar navbar-expand-md navbar-dark text-center bg-dark" style="border-bottom: 1px solid white;">
         <!-- Company Name / Logo -->
-        <a class="navbar-brand" href="#">Stéphane's Tutoring</a>
+        <a class="navbar-brand" href="#">
+          <img src="images/favicon.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
+          Stéphane's Tutoring
+        </a>
 
         <!-- Hamburger Menu Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,30 +57,29 @@
         </div>
       </nav>
     </header>
-    
+
+
     <main style="overflow-x: hidden;">
       <!-- HOME SECTION -->
       <div class="parent">
-        <div class="box d-none d-md-flex justify-content-end fullheight bg-dark" style="max-width: 43%">
+        <div class="box d-none d-md-flex justify-content-end fullheight" style="max-width: 43%">
           <img src="images/ice.jpg" class="heroimage">
         </div>
-        <div class="box centered fullheight bg-light">
+        <div class="box centered fullheight bg-light flex-column">
           <div class="container p-4">
             <h1 class="display-4">Private Tutoring</h1>
             <p class="lead">
-              I offer tutoring for Math, Science, Physics, and Chemistry.
+              I offer in person and remote tutoring for Math, Science, Physics, and Chemistry.
             </p>
-            <p>
-              <a class="my-1 btn btn-secondary" href="/#bio">About Me</a>
-              <a class="my-1 btn btn-secondary" href="/#faq">FAQ</a>
-              <a class="my-1 btn btn-secondary" href="/#testimonials">Testimonials</a>
-              <a class="my-1 btn btn-primary" href="inquire.html">Inquire</a>
-            </p>
+            <div class="btn-group d-md-none" role="group" aria-label="Website Sections">
+              <a type="button" class="btn btn-secondary" href="/#bio">About Me</a>
+              <a type="button" class="btn btn-secondary" href="/#faq">FAQ</a>
+              <a type="button" class="btn btn-secondary" href="/#testimonials">Testimonials</a>
+            </div>
+            <a class="btn btn-primary" href="inquire.html">Inquire</a>
           </div>
         </div>
       </div>
-      
-
       
       <!-- BIOGRAPHY SECTION -->
       <div class="anchor-mobile" id="bio-mobile"></div>
@@ -92,14 +96,15 @@
           <div class="container centered flex-column flex-lg-row bg-light rounded">
             <div class="container p-4">
               <p class="text-justify">
-                <b style="font-size: 1.3rem;">Stéphane [stɛ fan]</b> lives in <a href="https://en.wikipedia.org/wiki/Cochrane,_Alberta" target="_blank" class="link-primary">Cochrane, AB</a>
+                <b style="font-size: 1.3rem;">Stéphane Dorotich [stɛ fan]</b> lives in Cochrane, AB
                 in the foothills of the Rockies. He studies Software Engineering at the University
                 of Calgary.
               </p>
               <p class="text-justify">
                 An alumnus of Cochrane High School, Stéphane began tutoring in 2013.
                 Over the years, he has developed his ability to identify student needs,
-                simplify concepts, and teach problem solving skills.
+                simplify concepts, and teach problem solving skills. He is passionate about fostering empathy and
+                critical thinking in himself and in others.
               </p>   
               <p class="text-justify">
                 Stéphane is an avid rock climber, guitarist, and cook. You might find him in the
@@ -125,8 +130,8 @@
       <div class="row bg-light">
 
         <!-- Section Title -->
-        <div class="col-md-5 d-none d-md-flex flex-column justify-content-center">
-          <div class="container p-5 d-flex flex-column justify-content-center">
+        <div class="col-md-5 d-none d-md-flex">
+          <div class="container p-5 d-flex flex-column">
               <h1 class="text-right display-4">Frequently</h1>
               <h1 class="text-right display-4">Asked</h1>
               <h1 class="text-right display-4">Questions</h1>
@@ -149,13 +154,13 @@
               <!-- What subjects do you tutor? -->
               <div class="card">
                 <!-- Question -->
-                <div class="card-header" id="headerOne">
-                  <button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="card-header" id="headingSubjects">
+                  <button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseSubjects" aria-expanded="true" aria-controls="collapseSubjects">
                     <h6 class="mb-0 text-left">What subjects do you tutor?</h6>
                   </button>
                 </div>
                 <!-- Answer -->
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseSubjects" class="collapse" aria-labelledby="headingSubjects" data-parent="#accordion">
                   <div class="card-body">
                     <table class="table table-primary table-sm">
                       <thead>
@@ -186,34 +191,67 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Why do you book a meeting to talk about expectations? -->
+            <div class="card">
+              <!-- Question -->
+              <div class="card-header" id="headingMeet">
+                <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseMeet" aria-expanded="false" aria-controls="collapseMeet">
+                  <h6 class="mb-0 text-left">Why do you book a meeting to talk about expectations?</h6>
+                </button>
+              </div>
+              <!-- Answer -->
+              <div id="collapseMeet" class="collapse" aria-labelledby="headingMeet" data-parent="#accordion">
+                <div class="card-body">
+                  Booking an initial meeting:
+                  <ul>
+                    <li>
+                      Gives students the chance to express their needs.
+                    </li>
+                    <li>
+                      Gives you the chance to see if I'm the right fit.
+                    </li>
+                    <li>
+                      Gives us the chance to figure out where your student wants to be and how to get them there.
+                    </li>
+                  </ul>
+                  I have tutored long enough to know that students are most successful when all 3 parties are invested
+                  in their learning.
+              </div>
+            </div>
               
               <!-- How much does it cost? -->
               <div class="card">
                 <!-- Question -->
-                <div class="card-header" id="headingFive">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <div class="card-header" id="headingCost">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseCost" aria-expanded="false" aria-controls="collapseCost">
                     <h6 class="mb-0 text-left">How much does it cost?</h6>
                   </button>
                 </div>
                 <!-- Answer -->
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div id="collapseCost" class="collapse" aria-labelledby="headingCost" data-parent="#accordion">
                   <div class="card-body">
-                    My rate is 50$ per hour.</div>
+                    50$/hr for in person sessions.
+                    <br>
+                    40$/hr for remote sessions.
+                  </div>
                 </div>
               </div>
 
               <!-- Do you teach in person? -->
               <div class="card">
                 <!-- Question -->
-                <div class="card-header" id="headingTwo">
+                <div class="card-header" id="headingInPerson">
                   <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <h6 class="mb-0 text-left">Do you teach in person?</h6>
                   </button>
                 </div>
                 <!-- Answer -->
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingInPerson" data-parent="#accordion">
                   <div class="card-body">
                     Yes. <br> I am fully vaccinated and teach in person in Cochrane and NW Calgary.
+                    <br>
+                    I teach students at their homes or at a public venue we choose, whatever works best for you.
                   </div>
                 </div>
               </div>
@@ -221,32 +259,15 @@
               <!-- Do you teach online? -->
               <div class="card">
                 <!-- Question -->
-                <div class="card-header" id="headingFour">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="card-header" id="headingOnline">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseOnline" aria-expanded="false" aria-controls="collapseOnline">
                     <h6 class="mb-0 text-left">Do you teach online?</h6>
                   </button>
                 </div>
                 <!-- Answer -->
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div id="collapseOnline" class="collapse" aria-labelledby="headingOnline" data-parent="#accordion">
                   <div class="card-body">
                     Yes. <br> I am equipped to teach remotely using Zoom and my tablet.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Where do you teach? -->
-              <div class="card">
-                <!-- Question -->
-                <div class="card-header" id="headingThree">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h6 class="mb-0 text-left">Where do you teach?</h6>
-                  </button>
-                </div>
-                <!-- Answer -->
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                    I teach privately in home. That means I'll come to you. <br>
-                    If in home doesn't make sense, then we will choose a public venue (usually Starbucks... I drink a lot of coffee 🙄)
                   </div>
                 </div>
               </div>
@@ -254,17 +275,17 @@
               <!-- Do I need to sign up for multiple sessions? -->
               <div class="card">
                 <!-- Question -->
-                <div class="card-header" id="headingEight">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    <h6 class="mb-0 text-left">Do I need to sign up for multiple sessions?</h6>
+                <div class="card-header" id="headingMultiple">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseMultiple" aria-expanded="false" aria-controls="collapseMultiple">
+                    <h6 class="mb-0 text-left">How many sessions do I need to sign up for?</h6>
                   </button>
                 </div>
                 <!-- Answer -->
-                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <div id="collapseMultiple" class="collapse" aria-labelledby="headingMultiple" data-parent="#accordion">
                   <div class="card-body">
-                    No. I understand the importance of finding the right fit for your student.
-                    There is no fixed number of sessions you need to sign up for.
-                    We start with one, and go from there.
+                    None. I believe in being flexible and will accommodate your needs. I meet most students on a
+                    weekly basis to give them consistent and reliable support throughout the semester,
+                    but you are never locked in.
                   </div>
                 </div>
               </div>
@@ -272,19 +293,42 @@
               <!-- How does payment work? -->
               <div class="card">
                 <!-- Question -->
-                <div class="card-header" id="headingSix">
-                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <div class="card-header" id="headingPayment">
+                  <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="false" aria-controls="collapsePayment">
                     <h6 class="mb-0 text-left">How does payment work?</h6>
                   </button>
                 </div>
                 <!-- Answer -->
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div id="collapsePayment" class="collapse" aria-labelledby="headingPayment" data-parent="#accordion">
                   <div class="card-body">
                     Invoices are sent by email at the end of each month. They are payable by e-transfer.
                   </div>
                 </div>
               </div>             
             </div>
+
+            <!-- What are your Covid precautions? -->
+            <div class="card">
+              <!-- Question -->
+              <div class="card-header" id="headingCovid">
+                <button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseCovid" aria-expanded="false" aria-controls="collapseCovid">
+                  <h6 class="mb-0 text-left">What are your Covid precautions?</h6>
+                </button>
+              </div>
+              <!-- Answer -->
+              <div id="collapseCovid" class="collapse" aria-labelledby="headingCovid" data-parent="#accordion">
+                <div class="card-body">
+                  <ul>
+                    <li>I only teach in homes where all eligible family members are fully vaccinated.</li>
+                    <li>I am fully vaccinated.</li>
+                    <li>I sanitize my hands before & after each session.</li>
+                    <li>Mask wearing on request.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
             
           </div>
         </div>
@@ -417,7 +461,7 @@
               </p>
               <a class="btn btn-lg m-4 btn-primary" href="inquire.html">Inquire</a>
               <p>
-                Last updated: 2021-08-19
+                Last updated: 2021-08-31
               </p>
               <p class="text-center">
                 Built with 
@@ -426,7 +470,7 @@
                 Hosted on
                 <a class="link" href="https://github.com/" target="_blank">GitHub</a>
                 <br>
-                Designed by me
+                Developed by Stéphane Dorotich
               </p>
             </div>
           </div>
