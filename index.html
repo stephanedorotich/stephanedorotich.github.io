@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemtype="http://schema.org/WebPage">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+    
+    <meta name="author" content="Stéphane Dorotich">
+    <meta name="description" content="Private High School Tutor Based in Cochrane, AB. Teaching is Individualized to Match my Students' Learning Style and Objectives.">
+    <meta name="keywords" content="private tutor, in home tutoring, cochrane tutor, online tutor, high school tutor, math tutoring, science tutoring, physics tutoring, chemistry tutoring">
 
     <title>Stéphane's Tutoring Service</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
@@ -59,7 +63,7 @@
     </header>
 
 
-    <main style="overflow-x: hidden;">
+    <main style="overflow-x: hidden;" itemprop="mainContentOfPage">
       <!-- HOME SECTION -->
       <div class="parent">
         <div class="box d-none d-md-flex justify-content-end fullheight" style="max-width: 43%">
@@ -96,9 +100,9 @@
           <div class="container centered flex-column flex-lg-row bg-light rounded">
             <div class="container p-4">
               <p class="text-justify">
-                <b style="font-size: 1.3rem;">Stéphane Dorotich [stɛ fan]</b> lives in Cochrane, AB
-                in the foothills of the Rockies. He studies Software Engineering at the University
-                of Calgary.
+                <b style="font-size: 1.3rem;">Stéphane Dorotich</b> lives in Cochrane, AB
+                in the foothills of the Rockies. He studies Computer Science at the University
+                of Calgary with an interest in Social Network Analysis.
               </p>
               <p class="text-justify">
                 An alumnus of Cochrane High School, Stéphane began tutoring in 2013.
@@ -114,7 +118,7 @@
             </div>
             <!-- Biography Picture -->
             <div class="container p-4">
-              <img src="images/profile.jpg" class="img-fluid rounded">
+              <img src="images/profile.jpg" class="img-fluid rounded" itemprop="primaryImageOfPage">
             </div>
           </div>
         </div>
@@ -231,9 +235,7 @@
                 <!-- Answer -->
                 <div id="collapseCost" class="collapse" aria-labelledby="headingCost" data-parent="#accordion">
                   <div class="card-body">
-                    50$/hr for in person sessions.
-                    <br>
-                    40$/hr for remote sessions.
+                    My rate is 50$ per hour.
                   </div>
                 </div>
               </div>
@@ -319,7 +321,7 @@
               <div id="collapseCovid" class="collapse" aria-labelledby="headingCovid" data-parent="#accordion">
                 <div class="card-body">
                   <ul>
-                    <li>I only teach in homes where all eligible family members are fully vaccinated.</li>
+                    <li>I only teach in homes where all eligible family members are fully vaccinated. Proof of vaccination is required</li>
                     <li>I am fully vaccinated.</li>
                     <li>I sanitize my hands before & after each session.</li>
                     <li>Mask wearing on request.</li>
@@ -455,13 +457,12 @@
         <div class="col-md-12 d-flex justify-content-end flex-column">
           <div class="row bg-light d-flex flex-column">
             <div class="container centered flex-column p-4">
-              <p>
-                <h5>Still have questions?</h5>
-                <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
-              </p>
+              <p class="lead">Still have questions?</p>
+              <a class="link" href="mailto:stephanedorotich@gmail.com">stephanedorotich@gmail.com</a>
+              <a class="link" href="tel:+1587-434-7693">(587) 434-7693</a>
               <a class="btn btn-lg m-4 btn-primary" href="inquire.html">Inquire</a>
               <p>
-                Last updated: 2021-08-31
+                Last updated: <span itemprop="lastReviewed">2021-09-19</span>
               </p>
               <p class="text-center">
                 Built with 
@@ -470,7 +471,7 @@
                 Hosted on
                 <a class="link" href="https://github.com/" target="_blank">GitHub</a>
                 <br>
-                Developed by Stéphane Dorotich
+                Developed by <span itemprop="reviewedBy">Stéphane Dorotich</span>
               </p>
             </div>
           </div>
