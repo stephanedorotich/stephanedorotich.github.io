@@ -13,6 +13,12 @@ html {
     justify-content: center;
 }
 
+.smooth-transition {
+    transition: all ease;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
 /* Smooth scrolling position to account for Navbar */
 .anchor {
     padding-top: 57px;
